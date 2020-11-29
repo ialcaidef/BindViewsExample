@@ -13,7 +13,7 @@ Creación de un modelo
         public int Review { get; set; }
     }
     
-Que será pasado a la vista a través del controlador
+Que será pasado a una vista Razor a través del controlador
 
  public class HomeController : Controller
     {
@@ -33,10 +33,7 @@ Que será pasado a la vista a través del controlador
     
 Y esta lo recogerá para mostrarlo
 
-@model BindViewsExample.Models.Restaurant
 
-<body>
-    <h1>Restaurant Information</h1>
     <div>
         <p><b>Name</b>: @Model.Name</p>
         <hr />
@@ -48,6 +45,5 @@ Y esta lo recogerá para mostrarlo
         <hr />
         <p><b>Rating</b>: @Model.Review</p>
     </div>
-    <p id="remark">The first way to pass a model from an action to a view</p>
-</body>
+
 
