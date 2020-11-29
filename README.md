@@ -32,17 +32,9 @@ Que será pasado a la vista a través del controlador
     }
     
 Y esta lo recogerá para mostrarlo
+
 @model BindViewsExample.Models.Restaurant
-@{ Layout = null; }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="~/css/style-sheet.css" />
-</head>
 <body>
     <h1>Restaurant Information</h1>
     <div>
@@ -58,4 +50,4 @@ Y esta lo recogerá para mostrarlo
     </div>
     <p id="remark">The first way to pass a model from an action to a view</p>
 </body>
-</html>
+
